@@ -4,7 +4,7 @@
   "description": "A function that accepts dotted and undotted file extensions and returns the bare extension name.",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write .prettierrc.json index.js test/*.js",
+    "prettier": "prettier --write .prettierrc.json index.js test/index.test.js index.d.ts",
     "pretest": "npm run prettier",
     "test": "jest",
     "prepublishOnly": "npm test"
