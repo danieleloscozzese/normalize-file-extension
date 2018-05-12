@@ -1,0 +1,27 @@
+{
+  "name": "@danarthurgallagher/normalize-file-extension",
+  "version": "1.0.0",
+  "description": "A function that accepts dotted and undotted file extensions and returns the bare extension name.",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write .prettierrc.json index.js test/*.js",
+    "pretest": "npm run prettier",
+    "test": "jest",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanArthurGallagher/normalize-file-extension.git"
+  },
+  "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DanArthurGallagher/normalize-file-extension/issues"
+  },
+  "homepage": "https://github.com/DanArthurGallagher/normalize-file-extension#readme",
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "node": "6.10.3",
+    "prettier": "1.12.1"
+  }
+}
