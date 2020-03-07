@@ -6,22 +6,25 @@
   "scripts": {
     "prettier": "prettier --write .prettierrc.json index.js test/index.test.js index.d.ts",
     "pretest": "npm run prettier",
-    "test": "jest",
+    "test": "mocha tests",
     "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DanArthurGallagher/normalize-file-extension.git"
   },
-  "author": "Daniel Arthur Gallagher <dagher_oss@icloud.com>",
+  "author": "Daniel Arthur Gallagher <8526031+DanArthurGallagher@users.noreply.github.com>",
   "license": "EUPL-1.2",
   "bugs": {
     "url": "https://github.com/DanArthurGallagher/normalize-file-extension/issues"
   },
   "homepage": "https://github.com/DanArthurGallagher/normalize-file-extension#readme",
   "devDependencies": {
-    "jest": "^24.8.0",
-    "node": "^10.16.0",
-    "prettier": "1.18.2"
+    "mocha": "^7.1.0",
+    "node": "^12.16.1",
+    "prettier": "1.19.1"
+  },
+  "engines": {
+    "node": ">=6"
   }
 }
